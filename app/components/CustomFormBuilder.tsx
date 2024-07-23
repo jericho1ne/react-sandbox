@@ -28,7 +28,7 @@ export default function CustomFormBuilder(props: any) {
     
     setFormData({ 
       ...formData, 
-      [e.target.name]: e.target.value 
+      [(e.target as HTMLInputElement).name]: (e.target as HTMLInputElement).value
     })
     
     console.log(formData)
@@ -41,7 +41,7 @@ export default function CustomFormBuilder(props: any) {
       <form id="" className="">
         <div className="flex flex-col">
           {/* Build out the form inputs */}
-          { fields && fields.map((field) => (
+          { fields && fields.map((field: any) => (
             <label 
               className="flex flex-col mb-4" 
               key={ field.id }
