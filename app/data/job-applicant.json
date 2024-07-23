@@ -29,7 +29,7 @@
     },
     "startDate": {
       "id": "start_date",  
-      "type": "string",
+      "type": "date",
       "title": "Start Date",
       "placeholder": "Choose your ideal start date"
     }

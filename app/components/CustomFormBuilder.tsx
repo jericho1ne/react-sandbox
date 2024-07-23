@@ -15,30 +15,52 @@ interface FieldConfig {
 }
 
 interface FormField {
-  [key: string]: FieldConfig; // Index signature for dynamic field names
+  [key: string]: FieldConfig  
+}
+
+interface DisplayedOutput {
+  [key: string]: any
 }
 
 export default function CustomFormBuilder(props: any) {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({})
+  
+  // State of form, updated on each Submit action
+  const [displayedOutput, setDisplayedOutput] = useState<DisplayedOutput>({})
   
   const fields: FormField[] = props.formFields
   const formTitle: string = props.formTitle
   
   const handleInput = (e: FormEvent) => {
-    
     setFormData({ 
       ...formData, 
       [(e.target as HTMLInputElement).name]: (e.target as HTMLInputElement).value
     })
-    
-    console.log(formData)
+  }
+  
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+
+    setDisplayedOutput(formData)
+  }
+  
+  const showFormOutput = () => {
+    return (
+      <div className="text-xs">
+        { Object.keys(displayedOutput).map((key, index) => (
+          <div key={index}>
+            <span className="font-semibold">{ key }</span>: { displayedOutput[key] as string }
+          </div>
+        )) }
+      </div>
+    )
   }
 
   return (
     <div className="space-y-10 p-4">
       <h2 className="font-semibold">{ formTitle }</h2>
 
-      <form id="" className="">
+      <form id="" className="" onSubmit={handleSubmit}>
         <div className="flex flex-col">
           {/* Build out the form inputs */}
           { fields && fields.map((field: any) => (
@@ -66,6 +88,17 @@ export default function CustomFormBuilder(props: any) {
           type="submit" value="Submit" 
         />
       </form>
+      
+      {displayedOutput && 
+        <div>
+          <code className="">
+            { showFormOutput() }
+          </code>
+        </div>
+      }
+        
+      {/* TODO: Display Form errors on submit */}
+     
     </div>
   )
 }
