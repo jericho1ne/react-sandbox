@@ -1,0 +1,74 @@
+{
+  "title": "Job Applicant Information",
+  "description": "Please fill out the following fields to apply.",
+  "fields": {
+    "fullName": {
+      "id": "firstName",
+      "type": "string",
+      "required": true,
+      "title": "First Name",
+      "placeholder": "Please enter your full name"
+    },
+    "email": {
+      "id": "email",
+      "type": "string",
+      "required": true,
+      "title": "Email Address",
+      "format": "email"
+    },
+    "phone": {
+      "id": "phone",
+      "type": "string",
+      "required": true,
+      "title": "Phone Number"
+    },
+    "location": {
+      "id": "location",
+      "type": "string",
+      "title": "Current city"
+    },
+    "startDate": {
+      "id": "start_date",  
+      "type": "string",
+      "title": "Start Date",
+      "placeholder": "Choose your ideal start date"
+    },
+    "previousExperience": {
+      "id": "previousExperience",
+      "type": "array",
+      "required": false,
+      "title": "Previous Experience (Optional)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "companyName": {
+            "type": "string",
+            "required": true,
+            "title": "Company Name",
+            "id": "companyName"
+          },
+          "jobTitle": {
+            "type": "string",
+            "required": true,
+            "title": "Job Title",
+            "id": "jobTitle"
+          },
+          "startDate": {
+            "type": "string",
+            "required": true,
+            "title": "Start Date",
+            "id": "startDate",
+            "format": "date"
+          },
+          "endDate": {
+            "type": "string",
+            "required": false,
+            "title": "End Date (Optional)",
+            "id": "endDate",
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}
