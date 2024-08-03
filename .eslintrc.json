@@ -1,11 +1,12 @@
 {
   "extends": "next/core-web-vitals",
-  "semi": ["error", "never"],
-  "comma-dangle": ["error", {
-    "arrays": "always",
-    "objects": "always",
-    "exports": "always",
-    "imports": "never",
-    "functions": "never"
-  }]
+  "rules": {
+    "semi": ["error", "never"],
+    "comma-dangle": ["warn", {
+      "objects": "always",
+      "exports": "always",
+      "imports": "never",
+      "functions": "never"
+    }]
+  }
 }

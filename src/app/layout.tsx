@@ -10,7 +10,7 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
-});
+})
 
 export const metadata: Metadata = {
   title: "React Sandbox",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode,
 }>) {
   return (
     <html lang="en" className={inter.variable}>

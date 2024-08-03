@@ -1,10 +1,11 @@
 import Image from "next/image"
+import Link from "next/link"
 
 import './Navbar.scss'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar shadow shadow-lg shadow-inner">
       <div className="navbar-left shrink-0">
         <a href="/" className="logo">
           <Image
@@ -17,16 +18,16 @@ const Navbar = () => {
           />
         </a>
       </div>
-      <div className="navbar-right  shadow shadow-md shadow-inner">
-        <ul className="nav-links">
+      <div className="navbar-right">
+        <ul className="nav-links font-semibold">
           <li>
-            <a href="/form-demo">Form Demo</a>
+            <Link href="/form-demo">Form Demo</Link>
           </li>
           <li>
-            <a href="/log-parser">Log Parsing Demo</a>
+            <Link href="/log-parser">Log Parsing Demo</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </li>
         </ul>
       </div>
