@@ -12,7 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
-        mono: ["var(--font-source-code-pro)"],
+        mono: ["var(--font-monospace)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

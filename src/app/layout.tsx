@@ -14,7 +14,7 @@ const inter = Inter({
 })
 
 const monospace = Source_Code_Pro({
-  variable: "--font-source-code-pro",
+  variable: "--font-monospace",
   subsets: ["latin"],
   display: "swap",
 })
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode,
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${monospace.variable}`}>
       <body className={`page-body`}>
         <Navbar />
         <div className="page-content min-h-screen flex flex-col items-center">
