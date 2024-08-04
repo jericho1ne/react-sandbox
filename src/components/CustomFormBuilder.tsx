@@ -34,7 +34,7 @@ export default function CustomFormBuilder(props: any) {
   const handleInput = (e: FormEvent) => {
     setFormData({ 
       ...formData, 
-      [(e.target as HTMLInputElement).name]: (e.target as HTMLInputElement).value
+      [(e.target as HTMLInputElement).name]: (e.target as HTMLInputElement).value,
     })
   }
   

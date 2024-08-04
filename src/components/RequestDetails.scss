@@ -1,0 +1,21 @@
+.request-detail {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 300;
+
+  .request-detail-child {
+    .status-badge {
+      border-radius: 4px;
+      margin-right: 6px;
+      padding: 2px 4px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+  
+}

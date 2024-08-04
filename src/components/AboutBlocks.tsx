@@ -1,24 +1,24 @@
 import Image from "next/image"
 
-export default function HomeBlocks() {
+export default function AboutBlocks() {
   const cards = [
     { 
       title: "General Docs", 
       description: "In-depth information about Next.js features.", 
-      link: "https://nextjs.org/docs" 
+      link: "https://nextjs.org/docs",
     }, { 
       title: "Request Caching", 
       description: "Learn about Next.js in an interactive course with quizzes!", 
-      link: "https://nextjs.org/docs/app/building-your-application/caching#data-cache"
+      link: "https://nextjs.org/docs/app/building-your-application/caching#data-cache",
     }, { 
       title: "Templates", 
       description: "A rich collection of Next.js starter templates.", 
-      link: "https://vercel.com/templates?framework=next.js" 
+      link: "https://vercel.com/templates?framework=next.js",
     }, {
       title: "Deploy",
       description: "Deploy your Next.js site w/ Vercel, and connect it to a TLD.", 
-      link: "https://vercel.com/new"
-    }
+      link: "https://vercel.com/new",
+    },
   ]
   
   return (
@@ -57,5 +57,5 @@ export default function HomeBlocks() {
         ))}
       </div>
     </div>
-    )
-  }
+  )
+}

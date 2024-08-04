@@ -1,0 +1,18 @@
+
+.path-group {
+  font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+  margin: 4px 0;
+  padding: 12px;
+  background: #eee;
+  border-radius: 4px;
+
+  .path-group-title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  &:deep(.collapse-title) {
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    letter-spacing: -0.5px !important;
+  }
+}

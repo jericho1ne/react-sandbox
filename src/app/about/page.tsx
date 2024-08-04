@@ -1,10 +1,10 @@
-import HomeBlocks from '@/components/HomeBlocks'
+import AboutBlocks from '@/components/AboutBlocks'
 import Image from 'next/image'
 
 export default function About() {
   return (
     <main className="page-about">
-      <HomeBlocks />
+      <AboutBlocks />
       <div className="flex justify-center">
         <Image
           className="relative"

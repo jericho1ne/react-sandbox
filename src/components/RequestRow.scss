@@ -1,0 +1,19 @@
+.path-row {
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+  background: #ccc;
+
+  .path-row-count {
+    width: 22ch;
+  }
+
+  .path-row-bytes {
+    width: 20ch;
+  }
+
+  .path-row-latency {
+    width: auto;
+  }
+}
