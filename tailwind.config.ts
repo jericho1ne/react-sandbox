@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss";
-import typography from "@tailwindcss/typography";
+import type { Config } from "tailwindcss"
+import typography from "@tailwindcss/typography"
 
 
 const config: Config = {
@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)"],
+        mono: ["var(--font-source-code-pro)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,5 +22,6 @@ const config: Config = {
     },
   },
   plugins: [typography],
-};
-export default config;
+}
+
+export default config
