@@ -5,11 +5,3 @@
 html {
   font-family: var(--font-inter);
 }
-
-a {
-  transition: opacity 0.23s ease-out;
-}
-
-a:hover {
-  opacity: 0.45;
-}

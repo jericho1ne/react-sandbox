@@ -14,7 +14,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "React Sandbox",
-  description: "Fun with Nextjs",
+  description: "Fun with Nextjs boilerplate",
+  openGraph: {
+    siteName: 'React Sandbox',
+  }
 }
 
 export default function RootLayout({
