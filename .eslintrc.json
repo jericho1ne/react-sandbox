@@ -3,7 +3,8 @@
   "rules": {
     "semi": ["error", "never"],
     "comma-dangle": ["warn", {
-      "objects": "always",
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
       "exports": "always",
       "imports": "never",
       "functions": "never"
